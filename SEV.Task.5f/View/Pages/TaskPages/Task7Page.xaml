@@ -1,0 +1,52 @@
+﻿<Page x:Class="SEV.Task._5.View.Pages.TaskPages.Task7Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SEV.Task._5.View.Pages.TaskPages" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Task7Page">
+
+    <Border>
+        <Grid>
+            <Image Source="/Images/task7.jpg"
+                   Stretch="UniformToFill"/>
+            <Border HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Width="200"
+                    Height="200"
+                    Margin="10 10 10 0"
+                    Background="{DynamicResource AttentionToActionBrush}"
+                    CornerRadius="15"
+                    Effect="{StaticResource MaterialDesignElevationShadow16}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="12*" />
+                        <RowDefinition Height="13*" />
+                    </Grid.RowDefinitions>
+                    <Image Source="/Images/7.png"
+                   Stretch="UniformToFill" Margin="-452,25,0,0"/>
+
+                    <StackPanel Grid.Row="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center" Height="76" Width="140">
+
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0 10 0 0"/>
+
+                        <Button Margin="3,3,3,3"
+                                Background="#FF60C9FF"
+                                x:Name="BtnTask7"
+                                Click="BtnTask7_Click"
+                                Foreground="White" BorderBrush="White" Width="50" Height="32">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Check"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Page>
